@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2026-04",
+    "target_audience": [
+      "Business Analytics students",
+      "Data Science students",
+      "Data Engineering students",
+      "Early-career applicants (0-3 years experience)"
+    ],
+    "purpose": "Skill gap detection for Kaggle dataset recommendation system"
+  },
+  "roles": [
+    {
+      "role_id": "data_analyst",
+      "role_name": "Data Analyst",
+      "description": "Collects, cleans, and analyzes data to help organizations make data-driven decisions. Most entry-level-friendly role in the analytics space.",
+      "demand_level": "very_high",
+      "skill_categories": {
+        "technical_tools": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "SQL", "proficiency_expected": "intermediate", "tags": ["querying", "joins", "aggregations", "window_functions"] },
+            { "skill": "Excel / Google Sheets", "proficiency_expected": "intermediate", "tags": ["pivot_tables", "vlookup", "formulas", "data_cleaning"] },
+            { "skill": "Python (pandas, numpy)", "proficiency_expected": "beginner_to_intermediate", "tags": ["data_wrangling", "eda", "automation"] },
+            { "skill": "Tableau", "proficiency_expected": "intermediate", "tags": ["dashboards", "charts", "filters", "stories"] },
+            { "skill": "Power BI", "proficiency_expected": "intermediate", "tags": ["dashboards", "DAX", "reports", "slicers"] }
+          ]
+        },
+        "analytical_skills": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Exploratory Data Analysis (EDA)", "proficiency_expected": "intermediate", "tags": ["distributions", "outliers", "correlations", "patterns"] },
+            { "skill": "Data Cleaning & Wrangling", "proficiency_expected": "intermediate", "tags": ["missing_values", "duplicates", "normalization", "transformation"] },
+            { "skill": "Descriptive Statistics", "proficiency_expected": "intermediate", "tags": ["mean", "median", "variance", "distributions"] },
+            { "skill": "Data Visualization", "proficiency_expected": "intermediate", "tags": ["charts", "storytelling", "dashboards", "design_principles"] },
+            { "skill": "A/B Testing", "proficiency_expected": "beginner", "tags": ["hypothesis_testing", "statistical_significance", "p_values", "experiment_design"] }
+          ]
+        },
+        "domain_knowledge": {
+          "priority": "high",
+          "skills": [
+            { "skill": "KPI Definition & Tracking", "proficiency_expected": "intermediate", "tags": ["metrics", "business_goals", "OKRs"] },
+            { "skill": "Business Acumen", "proficiency_expected": "beginner", "tags": ["strategy", "decision_making", "stakeholder_communication"] },
+            { "skill": "Report Writing & Storytelling", "proficiency_expected": "intermediate", "tags": ["executive_summaries", "insights", "recommendations"] }
+          ]
+        },
+        "emerging_skills": {
+          "priority": "medium",
+          "skills": [
+            { "skill": "Python (scikit-learn basics)", "proficiency_expected": "beginner", "tags": ["classification", "clustering", "regression"] },
+            { "skill": "AI-Assisted Analytics", "proficiency_expected": "beginner", "tags": ["prompt_engineering", "llm_tools", "copilot_tools"] },
+            { "skill": "R (ggplot2, dplyr)", "proficiency_expected": "beginner", "tags": ["statistical_analysis", "visualization"] }
+          ]
+        }
+      }
+    },
+    {
+      "role_id": "business_analyst",
+      "role_name": "Business Analyst",
+      "description": "Bridges the gap between data findings and business decisions. Focuses on KPIs, process improvement, and translating data into actionable recommendations.",
+      "demand_level": "very_high",
+      "skill_categories": {
+        "technical_tools": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "SQL", "proficiency_expected": "beginner_to_intermediate", "tags": ["querying", "joins", "aggregations"] },
+            { "skill": "Excel / Google Sheets", "proficiency_expected": "advanced", "tags": ["pivot_tables", "financial_modeling", "dashboards", "vlookup", "macros"] },
+            { "skill": "Power BI or Tableau", "proficiency_expected": "intermediate", "tags": ["dashboards", "KPI_reporting", "interactive_visuals"] },
+            { "skill": "Python (basic)", "proficiency_expected": "beginner", "tags": ["data_cleaning", "eda"] }
+          ]
+        },
+        "analytical_skills": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Requirements Gathering", "proficiency_expected": "intermediate", "tags": ["stakeholder_interviews", "user_stories", "scope_definition"] },
+            { "skill": "Process Mapping & Optimization", "proficiency_expected": "intermediate", "tags": ["flowcharts", "BPMN", "efficiency", "lean"] },
+            { "skill": "Root Cause Analysis", "proficiency_expected": "intermediate", "tags": ["fishbone_diagram", "5_whys", "problem_solving"] },
+            { "skill": "KPI Design & Monitoring", "proficiency_expected": "advanced", "tags": ["metrics", "scorecards", "OKRs", "benchmarking"] },
+            { "skill": "Market & Competitive Analysis", "proficiency_expected": "intermediate", "tags": ["SWOT", "PESTLE", "benchmarking"] }
+          ]
+        },
+        "domain_knowledge": {
+          "priority": "high",
+          "skills": [
+            { "skill": "Business Strategy & Decision Making", "proficiency_expected": "intermediate", "tags": ["cost_benefit_analysis", "ROI", "recommendations"] },
+            { "skill": "Customer & Churn Analysis", "proficiency_expected": "intermediate", "tags": ["retention", "CLV", "segmentation"] },
+            { "skill": "Supply Chain & Operations Analytics", "proficiency_expected": "beginner", "tags": ["inventory", "demand_forecasting", "logistics"] },
+            { "skill": "Marketing Analytics", "proficiency_expected": "beginner", "tags": ["campaign_performance", "funnel_analysis", "CAC", "ROI"] }
+          ]
+        },
+        "emerging_skills": {
+          "priority": "medium",
+          "skills": [
+            { "skill": "AI Integration & Oversight", "proficiency_expected": "beginner", "tags": ["ml_interpretation", "ai_tools", "automated_insights"] },
+            { "skill": "Agile / Scrum Methodology", "proficiency_expected": "beginner", "tags": ["sprints", "backlog", "user_stories"] }
+          ]
+        }
+      }
+    },
+    {
+      "role_id": "financial_analyst",
+      "role_name": "Financial Analyst",
+      "description": "Uses quantitative and data analysis skills to support financial planning, investment decisions, budgeting, and forecasting.",
+      "demand_level": "high",
+      "skill_categories": {
+        "technical_tools": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Excel (Advanced)", "proficiency_expected": "advanced", "tags": ["financial_modeling", "DCF", "pivot_tables", "VBA", "scenario_analysis"] },
+            { "skill": "SQL", "proficiency_expected": "beginner_to_intermediate", "tags": ["financial_data_extraction", "joins", "aggregations"] },
+            { "skill": "Python (pandas, numpy)", "proficiency_expected": "intermediate", "tags": ["financial_analysis", "time_series", "portfolio_analysis"] },
+            { "skill": "Power BI or Tableau", "proficiency_expected": "intermediate", "tags": ["financial_dashboards", "P&L_reporting", "budget_tracking"] },
+            { "skill": "Bloomberg / Refinitiv (conceptual)", "proficiency_expected": "beginner", "tags": ["market_data", "financial_terminals"] }
+          ]
+        },
+        "analytical_skills": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Financial Modeling", "proficiency_expected": "intermediate", "tags": ["DCF", "LBO", "three_statement_model", "valuation"] },
+            { "skill": "Time Series Analysis & Forecasting", "proficiency_expected": "intermediate", "tags": ["ARIMA", "Prophet", "trend_decomposition", "revenue_forecasting"] },
+            { "skill": "Statistical Analysis", "proficiency_expected": "intermediate", "tags": ["regression", "correlation", "hypothesis_testing", "risk_modeling"] },
+            { "skill": "Risk Analysis", "proficiency_expected": "intermediate", "tags": ["VaR", "scenario_analysis", "sensitivity_analysis"] },
+            { "skill": "Econometrics", "proficiency_expected": "beginner", "tags": ["regression_models", "forecasting", "macroeconomic_indicators"] }
+          ]
+        },
+        "domain_knowledge": {
+          "priority": "high",
+          "skills": [
+            { "skill": "Accounting Fundamentals", "proficiency_expected": "intermediate", "tags": ["P&L", "balance_sheet", "cash_flow", "GAAP"] },
+            { "skill": "Investment & Portfolio Analysis", "proficiency_expected": "beginner_to_intermediate", "tags": ["stocks", "bonds", "returns", "diversification", "Sharpe_ratio"] },
+            { "skill": "Budgeting & Variance Analysis", "proficiency_expected": "intermediate", "tags": ["budget_vs_actuals", "variance_analysis", "FP&A"] },
+            { "skill": "Credit & Fraud Analysis", "proficiency_expected": "beginner", "tags": ["credit_scoring", "default_risk", "anomaly_detection"] }
+          ]
+        },
+        "emerging_skills": {
+          "priority": "medium",
+          "skills": [
+            { "skill": "Python for Finance (yfinance, scipy)", "proficiency_expected": "intermediate", "tags": ["stock_analysis", "portfolio_optimization", "options_pricing"] },
+            { "skill": "Machine Learning for Finance", "proficiency_expected": "beginner", "tags": ["fraud_detection", "credit_scoring", "price_prediction"] }
+          ]
+        }
+      }
+    },
+    {
+      "role_id": "data_scientist",
+      "role_name": "Data Scientist",
+      "description": "Applies advanced statistical and machine learning techniques to extract insights and build predictive models. Bridges data engineering and business strategy.",
+      "demand_level": "very_high",
+      "skill_categories": {
+        "technical_tools": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Python (scikit-learn, pandas, numpy, matplotlib, seaborn)", "proficiency_expected": "advanced", "tags": ["ml_pipelines", "eda", "feature_engineering", "modeling"] },
+            { "skill": "SQL", "proficiency_expected": "intermediate", "tags": ["complex_queries", "window_functions", "CTEs", "data_extraction"] },
+            { "skill": "Jupyter Notebooks", "proficiency_expected": "advanced", "tags": ["reproducible_analysis", "documentation", "storytelling"] },
+            { "skill": "R (optional)", "proficiency_expected": "beginner", "tags": ["statistical_modeling", "ggplot2", "tidyverse"] },
+            { "skill": "Git / Version Control", "proficiency_expected": "intermediate", "tags": ["github", "collaboration", "versioning"] }
+          ]
+        },
+        "analytical_skills": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Machine Learning (Supervised)", "proficiency_expected": "intermediate", "tags": ["classification", "regression", "random_forest", "XGBoost", "logistic_regression"] },
+            { "skill": "Machine Learning (Unsupervised)", "proficiency_expected": "intermediate", "tags": ["clustering", "k_means", "PCA", "dimensionality_reduction"] },
+            { "skill": "Feature Engineering", "proficiency_expected": "intermediate", "tags": ["encoding", "scaling", "selection", "transformation"] },
+            { "skill": "Model Evaluation & Validation", "proficiency_expected": "intermediate", "tags": ["cross_validation", "ROC_AUC", "precision_recall", "RMSE", "confusion_matrix"] },
+            { "skill": "Natural Language Processing (NLP)", "proficiency_expected": "beginner_to_intermediate", "tags": ["sentiment_analysis", "text_classification", "TF_IDF", "transformers"] },
+            { "skill": "Statistics & Probability", "proficiency_expected": "advanced", "tags": ["Bayesian_statistics", "distributions", "hypothesis_testing", "A/B_testing"] }
+          ]
+        },
+        "domain_knowledge": {
+          "priority": "high",
+          "skills": [
+            { "skill": "Business Problem Framing", "proficiency_expected": "intermediate", "tags": ["problem_definition", "success_metrics", "stakeholder_communication"] },
+            { "skill": "Data Ethics & Bias Awareness", "proficiency_expected": "beginner", "tags": ["fairness", "model_bias", "data_privacy", "explainability"] },
+            { "skill": "Storytelling with Data", "proficiency_expected": "intermediate", "tags": ["presentations", "executive_communication", "insights_delivery"] }
+          ]
+        },
+        "emerging_skills": {
+          "priority": "high",
+          "skills": [
+            { "skill": "Large Language Models (LLMs) & Prompt Engineering", "proficiency_expected": "beginner", "tags": ["ChatGPT", "Claude", "RAG", "llm_apis"] },
+            { "skill": "MLOps Basics", "proficiency_expected": "beginner", "tags": ["model_deployment", "monitoring", "pipelines", "Docker"] },
+            { "skill": "Deep Learning Fundamentals", "proficiency_expected": "beginner", "tags": ["neural_networks", "Keras", "PyTorch", "transfer_learning"] }
+          ]
+        }
+      }
+    },
+    {
+      "role_id": "data_engineer",
+      "role_name": "Data Engineer",
+      "description": "Builds and maintains data infrastructure — pipelines, warehouses, and processing systems — to make data accessible and ready for analysis.",
+      "demand_level": "very_high",
+      "skill_categories": {
+        "technical_tools": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "SQL (Advanced)", "proficiency_expected": "advanced", "tags": ["DDL", "stored_procedures", "optimization", "indexing", "complex_joins"] },
+            { "skill": "Python (ETL scripting)", "proficiency_expected": "advanced", "tags": ["pandas", "SQLAlchemy", "requests", "automation", "API_integration"] },
+            { "skill": "Apache Spark / PySpark", "proficiency_expected": "beginner_to_intermediate", "tags": ["big_data", "distributed_computing", "transformations"] },
+            { "skill": "Cloud Platforms (AWS / Azure / GCP)", "proficiency_expected": "beginner_to_intermediate", "tags": ["S3", "BigQuery", "Redshift", "Databricks", "cloud_storage"] },
+            { "skill": "Airflow / Workflow Orchestration", "proficiency_expected": "beginner", "tags": ["DAGs", "scheduling", "pipeline_management"] },
+            { "skill": "dbt (data build tool)", "proficiency_expected": "beginner", "tags": ["data_transformation", "SQL_modeling", "documentation"] }
+          ]
+        },
+        "analytical_skills": {
+          "priority": "high",
+          "skills": [
+            { "skill": "ETL / ELT Pipeline Design", "proficiency_expected": "intermediate", "tags": ["extract", "transform", "load", "data_pipelines"] },
+            { "skill": "Data Modeling", "proficiency_expected": "intermediate", "tags": ["star_schema", "snowflake_schema", "normalization", "ERDs"] },
+            { "skill": "Data Quality & Governance", "proficiency_expected": "intermediate", "tags": ["validation", "lineage", "cataloging", "quality_checks"] }
+          ]
+        },
+        "domain_knowledge": {
+          "priority": "high",
+          "skills": [
+            { "skill": "Data Warehousing Concepts", "proficiency_expected": "intermediate", "tags": ["OLAP", "OLTP", "dimensional_modeling", "data_lakes"] },
+            { "skill": "NoSQL Databases", "proficiency_expected": "beginner", "tags": ["MongoDB", "DynamoDB", "Cassandra", "document_stores"] },
+            { "skill": "APIs & Data Ingestion", "proficiency_expected": "intermediate", "tags": ["REST_APIs", "webhooks", "Kafka", "streaming_data"] }
+          ]
+        },
+        "emerging_skills": {
+          "priority": "medium",
+          "skills": [
+            { "skill": "Real-Time Data Processing", "proficiency_expected": "beginner", "tags": ["Kafka", "Flink", "streaming", "event_driven"] },
+            { "skill": "Data Lakehouse Architecture", "proficiency_expected": "beginner", "tags": ["Delta_Lake", "Iceberg", "Databricks", "unified_storage"] }
+          ]
+        }
+      }
+    },
+    {
+      "role_id": "bi_analyst",
+      "role_name": "Business Intelligence (BI) Analyst",
+      "description": "Designs and maintains dashboards, reporting systems, and analytical tools to help business leaders track performance and make faster decisions.",
+      "demand_level": "high",
+      "skill_categories": {
+        "technical_tools": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Power BI", "proficiency_expected": "advanced", "tags": ["DAX", "Power_Query", "data_models", "reports", "dashboards"] },
+            { "skill": "Tableau", "proficiency_expected": "advanced", "tags": ["calculated_fields", "LOD_expressions", "stories", "published_dashboards"] },
+            { "skill": "SQL", "proficiency_expected": "advanced", "tags": ["complex_queries", "CTEs", "window_functions", "stored_procedures"] },
+            { "skill": "Excel", "proficiency_expected": "advanced", "tags": ["pivot_tables", "Power_Pivot", "financial_modeling"] },
+            { "skill": "Looker / Qlik (awareness)", "proficiency_expected": "beginner", "tags": ["enterprise_BI", "LookML"] }
+          ]
+        },
+        "analytical_skills": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Dashboard Design & UX", "proficiency_expected": "intermediate", "tags": ["layout", "color_theory", "user_experience", "stakeholder_requirements"] },
+            { "skill": "KPI Framework Design", "proficiency_expected": "advanced", "tags": ["metrics", "scorecards", "benchmarking", "OKRs"] },
+            { "skill": "Data Modeling for BI", "proficiency_expected": "intermediate", "tags": ["star_schema", "dimensions", "facts", "relationships"] },
+            { "skill": "Trend & Pattern Analysis", "proficiency_expected": "intermediate", "tags": ["YoY_analysis", "seasonality", "anomaly_detection"] }
+          ]
+        },
+        "domain_knowledge": {
+          "priority": "high",
+          "skills": [
+            { "skill": "Sales & Revenue Analytics", "proficiency_expected": "intermediate", "tags": ["pipeline", "conversion_rates", "ARR", "churn"] },
+            { "skill": "Operations Analytics", "proficiency_expected": "intermediate", "tags": ["efficiency", "productivity", "SLAs", "process_metrics"] },
+            { "skill": "Customer Analytics", "proficiency_expected": "intermediate", "tags": ["segmentation", "CLV", "NPS", "retention"] }
+          ]
+        },
+        "emerging_skills": {
+          "priority": "medium",
+          "skills": [
+            { "skill": "AI-Augmented BI Tools", "proficiency_expected": "beginner", "tags": ["Copilot_in_Power_BI", "natural_language_queries", "smart_narratives"] }
+          ]
+        }
+      }
+    },
+    {
+      "role_id": "marketing_analyst",
+      "role_name": "Marketing Analyst",
+      "description": "Analyzes marketing campaign performance, customer behavior, and market trends to optimize strategies and improve ROI.",
+      "demand_level": "high",
+      "skill_categories": {
+        "technical_tools": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "SQL", "proficiency_expected": "intermediate", "tags": ["campaign_data", "customer_data", "aggregations"] },
+            { "skill": "Excel / Google Sheets", "proficiency_expected": "advanced", "tags": ["pivot_tables", "campaign_tracking", "dashboards"] },
+            { "skill": "Google Analytics / GA4", "proficiency_expected": "intermediate", "tags": ["web_analytics", "traffic_analysis", "conversion_tracking"] },
+            { "skill": "Tableau or Power BI", "proficiency_expected": "intermediate", "tags": ["marketing_dashboards", "campaign_reporting"] },
+            { "skill": "Python (basic)", "proficiency_expected": "beginner", "tags": ["data_cleaning", "automation", "sentiment_analysis"] }
+          ]
+        },
+        "analytical_skills": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Marketing Funnel Analysis", "proficiency_expected": "intermediate", "tags": ["TOFU_MOFU_BOFU", "conversion_rates", "drop_off_analysis"] },
+            { "skill": "Customer Segmentation", "proficiency_expected": "intermediate", "tags": ["RFM_analysis", "cohort_analysis", "clustering"] },
+            { "skill": "A/B Testing", "proficiency_expected": "intermediate", "tags": ["experiment_design", "statistical_significance", "lift_analysis"] },
+            { "skill": "Sentiment Analysis / NLP", "proficiency_expected": "beginner", "tags": ["social_media_analysis", "reviews", "text_mining"] },
+            { "skill": "Attribution Modeling", "proficiency_expected": "beginner", "tags": ["multi_touch", "last_click", "first_click", "Shapley_value"] }
+          ]
+        },
+        "domain_knowledge": {
+          "priority": "high",
+          "skills": [
+            { "skill": "Digital Marketing Metrics", "proficiency_expected": "advanced", "tags": ["CTR", "CAC", "ROAS", "CLV", "CPM", "CPC"] },
+            { "skill": "Customer Lifetime Value (CLV)", "proficiency_expected": "intermediate", "tags": ["retention", "churn", "revenue_per_customer"] },
+            { "skill": "Market Research & Competitive Analysis", "proficiency_expected": "intermediate", "tags": ["surveys", "benchmarking", "positioning"] }
+          ]
+        },
+        "emerging_skills": {
+          "priority": "medium",
+          "skills": [
+            { "skill": "AI-Driven Personalization", "proficiency_expected": "beginner", "tags": ["recommendation_systems", "dynamic_content", "LLM_marketing"] },
+            { "skill": "Social Media Analytics", "proficiency_expected": "intermediate", "tags": ["engagement_metrics", "influencer_analytics", "trend_analysis"] }
+          ]
+        }
+      }
+    },
+    {
+      "role_id": "quant_analyst",
+      "role_name": "Quantitative Analyst",
+      "description": "Applies advanced mathematical and statistical models to financial data, often in investment banking, hedge funds, or risk management.",
+      "demand_level": "medium_high",
+      "skill_categories": {
+        "technical_tools": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Python (scipy, statsmodels, numpy)", "proficiency_expected": "advanced", "tags": ["quantitative_modeling", "statistical_analysis", "simulation"] },
+            { "skill": "SQL", "proficiency_expected": "intermediate", "tags": ["financial_data", "time_series_queries"] },
+            { "skill": "R", "proficiency_expected": "intermediate", "tags": ["statistical_modeling", "financial_econometrics"] },
+            { "skill": "Excel (Advanced)", "proficiency_expected": "advanced", "tags": ["financial_modeling", "VBA", "Monte_Carlo_simulation"] }
+          ]
+        },
+        "analytical_skills": {
+          "priority": "critical",
+          "skills": [
+            { "skill": "Statistical Modeling & Inference", "proficiency_expected": "advanced", "tags": ["regression", "time_series", "Bayesian_methods", "Monte_Carlo"] },
+            { "skill": "Portfolio Optimization", "proficiency_expected": "intermediate", "tags": ["Markowitz", "Sharpe_ratio", "efficient_frontier", "risk_return"] },
+            { "skill": "Risk Modeling", "proficiency_expected": "intermediate", "tags": ["VaR", "CVaR", "stress_testing", "factor_models"] },
+            { "skill": "Algorithmic Trading Concepts", "proficiency_expected": "beginner", "tags": ["backtesting", "signal_generation", "momentum", "mean_reversion"] },
+            { "skill": "Econometrics", "proficiency_expected": "advanced", "tags": ["ARIMA", "GARCH", "cointegration", "panel_data"] }
+          ]
+        },
+        "domain_knowledge": {
+          "priority": "high",
+          "skills": [
+            { "skill": "Financial Instruments", "proficiency_expected": "intermediate", "tags": ["equities", "derivatives", "options", "bonds", "futures"] },
+            { "skill": "Market Microstructure", "proficiency_expected": "beginner", "tags": ["order_books", "liquidity", "price_discovery"] }
+          ]
+        },
+        "emerging_skills": {
+          "priority": "medium",
+          "skills": [
+            { "skill": "Machine Learning for Finance", "proficiency_expected": "intermediate", "tags": ["alpha_generation", "credit_scoring", "fraud_detection", "deep_learning_finance"] },
+            { "skill": "Alternative Data Analysis", "proficiency_expected": "beginner", "tags": ["sentiment_data", "satellite_data", "NLP_on_earnings_calls"] }
+          ]
+        }
+      }
+    }
+  ],
+  "cross_role_foundational_skills": {
+    "description": "Skills that are universally valued across all roles and should be treated as baseline requirements when evaluating any resume.",
+    "skills": [
+      { "skill": "SQL", "reason": "Universal data access and querying language across all analytics roles" },
+      { "skill": "Excel / Google Sheets", "reason": "Ubiquitous in business environments for quick analysis" },
+      { "skill": "Data Visualization", "reason": "Turning data into decisions is core to every analyst role" },
+      { "skill": "Critical Thinking & Problem Solving", "reason": "Foundation of all analytical work" },
+      { "skill": "Communication & Storytelling", "reason": "Insights are useless without effective communication to stakeholders" },
+      { "skill": "Python (pandas basics)", "reason": "Increasingly standard even in non-technical analyst roles" },
+      { "skill": "Statistical Fundamentals", "reason": "Required to interpret data correctly and avoid false conclusions" },
+      { "skill": "Business Acumen", "reason": "All analytics roles require understanding business context to add value" }
+    ]
+  },
+  "trending_industry_domains": {
+    "description": "Industry verticals with strong demand for analytics talent in 2025-2026. Useful for matching Kaggle datasets to real-world contexts.",
+    "domains": [
+      {
+        "domain": "E-Commerce & Retail",
+        "relevant_skills": ["customer_segmentation", "sales_forecasting", "churn_prediction", "RFM_analysis", "supply_chain"],
+        "demand_trend": "very_high"
+      },
+      {
+        "domain": "Finance & Fintech",
+        "relevant_skills": ["fraud_detection", "credit_scoring", "risk_modeling", "time_series_forecasting", "portfolio_analysis"],
+        "demand_trend": "very_high"
+      },
+      {
+        "domain": "Healthcare & Life Sciences",
+        "relevant_skills": ["clinical_data_analysis", "patient_outcomes", "survival_analysis", "NLP_on_clinical_notes"],
+        "demand_trend": "high"
+      },
+      {
+        "domain": "Technology & SaaS",
+        "relevant_skills": ["product_analytics", "user_retention", "A/B_testing", "funnel_analysis", "LTV_modeling"],
+        "demand_trend": "very_high"
+      },
+      {
+        "domain": "Marketing & Advertising",
+        "relevant_skills": ["attribution_modeling", "campaign_analysis", "sentiment_analysis", "customer_journey", "CAC_CLV"],
+        "demand_trend": "high"
+      },
+      {
+        "domain": "Supply Chain & Logistics",
+        "relevant_skills": ["demand_forecasting", "inventory_optimization", "route_optimization", "vendor_analysis"],
+        "demand_trend": "high"
+      },
+      {
+        "domain": "Human Resources (People Analytics)",
+        "relevant_skills": ["attrition_prediction", "workforce_planning", "diversity_metrics", "performance_analysis"],
+        "demand_trend": "medium_high"
+      },
+      {
+        "domain": "Energy & Sustainability",
+        "relevant_skills": ["time_series_analysis", "anomaly_detection", "ESG_metrics", "demand_forecasting"],
+        "demand_trend": "medium_high"
+      }
+    ]
+  }
+}
