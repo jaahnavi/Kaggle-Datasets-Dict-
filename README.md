@@ -10,7 +10,7 @@ Supported roles: Data Analyst, Business Analyst, Financial Analyst, Data Scienti
 
 ## How it works
 
-1. `kaggle_search_updated.py` reads `role_skill_sets.json`, fans out Kaggle searches per skill using tag-based queries, filters results through Groq (Llama 3) for relevance and domain/technique classification, and consolidates everything into `filtered_datasets.json`.
+1. `kaggle_search_updated.py` reads `role_skill_sets.json`, fans out Kaggle searches per skill using tag-based queries, filters results through Groq (Llama 3) for relevance and domain/technique classification, and consolidates everything into `filtered_datasets.json`. (change role_skills_sets.json for customized output)
 2. `rank_datasets.py` reads `filtered_datasets.json`, scores each dataset using a saved XGBoost ranker (`xgb_ranker.json` + `scaler.pkl`), and outputs `dataset_lookup.json` — a flat list sorted by final score.
 
 ---
@@ -82,3 +82,5 @@ Output: `dataset_lookup.json`
 | `role_skill_sets.json` | Skills taxonomy for all 8 roles |
 | `xgb_ranker.json` | Trained XGBoost ranking model |
 | `scaler.pkl` | Feature scaler fitted during training |
+| `select_top.py` | iterates through all uniques skills in priority and select datasets |
+| `dataset_lookup.json` | final full output with all the datasets for all the roles |
